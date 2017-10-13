@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>Store and retrieve data from local storage.</h2>
+
+        <p id="number"></p>
+        <p id="name"></p>
+        <p id="img"></p>
+
+        <script>
+            var myObj, myJSON, text, obj;
+
+            //Storing data:
+            myObj = {"stepnumber":"01", "stepname":"BP - Bypass Adjuster", "stepimg":"dover-i2-i3-01.png" };
+            myJSON = JSON.stringify(myObj);
+            localStorage.setItem("testJSON", myJSON);
+
+            //Retrieving data:
+            text = localStorage.getItem("testJSON");
+            obj = JSON.parse(text);
+            document.getElementById("number").innerHTML = obj.stepnumber;
+            document.getElementById("name").innerHTML = obj.stepname;
+            document.getElementById("img").innerHTML = obj.stepimg;
+        </script>
+
+    </body>
+</html>

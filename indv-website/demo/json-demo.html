@@ -12,16 +12,17 @@
             var myObj, myJSON, text, obj;
 
             //Storing data:
-            myObj = {"stepnumber":"01", "stepname":"BP - Bypass Adjuster", "stepimg":"dover-i2-i3-01.png" };
+            myObj = {step1:{"stepnumber":"01", "stepname":"BP - Bypass Adjuster", "stepimg":"dover-i2-i3-01.png" },
+                     step2:{"stepnumber":"02", "stepname":"DM - Down Main", "stepimg":"dover-i2-i3-01.png" }};
             myJSON = JSON.stringify(myObj);
             localStorage.setItem("testJSON", myJSON);
 
             //Retrieving data:
             text = localStorage.getItem("testJSON");
             obj = JSON.parse(text);
-            document.getElementById("number").innerHTML = obj.stepnumber;
-            document.getElementById("name").innerHTML = obj.stepname;
-            document.getElementById("img").innerHTML = obj.stepimg;
+            document.getElementById("number").innerHTML = obj["step" + 2].stepnumber;
+            document.getElementById("name").innerHTML = obj.step2.stepname;
+            document.getElementById("img").innerHTML = obj.step2.stepimg;
         </script>
 
     </body>

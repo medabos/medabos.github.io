@@ -1,0 +1,128 @@
+body {
+    color: red;
+    font-family: arial, helvetica;
+}
+
+header {
+    width: 50%;
+    border: solid;
+    line-height: 100%;
+}
+
+nav {
+    color: #00FF00;
+    background-color: rgb(247, 209, 219);
+    text-indent: 50px;
+}
+
+nav ol {
+    background-color: fuchsia;
+}
+
+
+/* nav ol li {background-color: cyan;float:left;padding-right:1.5em;} */
+
+nav ol li {
+    float: left;
+    margin-right: 1.5em;
+    list-style-type: none;
+}
+
+nav ol li {
+    display: inline;
+    padding: 1.2em;
+}
+
+main stong {
+    color: purple;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+main img {}
+
+aside#introduction {
+    font-size: 8px;
+    margin: 24px;
+    color: #FF0000;
+}
+
+.black {
+    color: black;
+}
+
+footer ul {
+    text-shadow: 3px 3px 1px #777777;
+}
+
+footer {
+    background-color: pink;
+}
+
+footer ul li {
+    display: inline;
+}
+
+h1.dropcap::first-letter {
+    color: green;
+    font-family: sans-serif;
+    font-size: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: green;
+    border: solid thick red;
+    font-size: 10px;
+    text-align: center;
+}
+
+a:hover {
+    font-weight: bold;
+    color: green;
+}
+
+span.docintro {
+    color: rgb(0, 0, 255);
+}
+
+.dropcap::first-letter {
+    color: purple;
+    font-size: 600%;
+}
+
+body a{
+    font-size: 20px;
+    background-color: aqua
+}
+
+heading p {
+    font-weight: bold;
+}
+
+.fs2em {
+    font-size: 2em;
+}
+
+.fs2ex {
+    font-size: 2ex;
+}
+
+.fs24px {
+    font-size: 24px;
+}
+
+.fs120prcnt {
+    font-size: 120%;
+}
+
+.fs24pt {
+    font-size: 24pt;
+}
+
+.fsin {
+    font-size: .5in;
+}
+
+
+/*<link href="../css/w8-css.css" rel="stylesheet" type="text/css" >*/

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adjusting Guide - ethingtonsolutions.com</title>
+    <link href="../css/indv-style.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="../js/indv-js.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Elevator Valve Guide - ethingtonsolutions.com</h1>
+        <nav>
+            <ol>
+                <li><a href="../identifying.html">Identifing</a></li>
+                <li><a href="../adjusting.html">Adjusting</a></li>
+                <li><a href="../troubleshooting.html">Troubleshooting</a></li>
+                <li><a href="../videos.html">Videos</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../../cit230-links.html">CIT230 Links</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <h2>Dover I-2 / I-3 Adjusting Guide</h2>
+        <button onclick="prevStep()">Prev</button>
+        <input id="step" name="fstep" type="text" value="1" disabled><span> of </span>
+        <input id="laststep" name="fstep" type="text" value="9" disabled>
+        <button onclick="nextStep()">Next</button>
+        <input type="text" id="adjustingset" hidden value="doveri2i3">
+
+        <h4>Name: </h4>
+        <div id="a-name">Name</div>
+        <h4>Car Direction: </h4>
+        <div id="a-direction">Direction</div>
+        <h4>Controller / Selonoids: </h4>
+        <div id="a-controller">Controller Info</div>
+        <h4>Instructions: </h4>
+        <div id="a-instructions">Instructions</div>
+        <h4>Adjuster IN: </h4>
+        <div id="a-turnin">Turn In</div>
+        <h4>Adjuster OUT: </h4>
+        <div id="a-turnout">Turn Out</div>
+        <img alt="Adjuster Pic" id="a-img" src="../img/blank-img-240x480.PNG">
+        <h4>Troubleshooting: </h4>
+        <div id="a-troubleshooting">Troubleshooting</div>
+        <h4>Info 1: </h4>
+        <div id="a-info1">Info 1</div>
+        <h4>Info 2: </h4>
+        <div id="a-info2">Info 2</div>
+
+    </main>
+    <Footer>
+        <a href="https://www.elevatorequipment.com/sites/default/files/uploads/downloadable_files/UV-5ABTC_adjustments.pdf">EECO UV-5ABTC_adjustments.pdf</a>
+    </Footer>
+    <script>
+        getAdjustingStep(document.getElementById("adjustingset").value, 1)
+    </script>
+</body>
+</html>

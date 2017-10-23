@@ -3,18 +3,21 @@
 
 * {
     font-family:arial,helvetica,sans-serif;
+    /*
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
-    /*
+
     vertical-align: baseline;
     background: transparent;
     */
 }
 
 header{
+    top:0px;
     background-color:blue;
+    width:100%;
 }
 
 header h1{
@@ -25,6 +28,7 @@ nav{
     background-color:bisque;
     color:bisque;
     font-weight:bold;
+    width:inherit;
 }
 
 nav ol li{
@@ -33,10 +37,12 @@ nav ol li{
 }
 
 main{
+    width:100%;
     min-height: 400px;
     padding:1.5em;
 }
 
+/*
 button {
     background-color:lightgray;
     border-style:outset;
@@ -45,9 +51,11 @@ button {
     border: 5px;
     outline: 5px;
 }
+*/
 
 footer{
     background-color:black;
     color:white;
     line-height:2em;
+    width:100%
 }

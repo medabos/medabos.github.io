@@ -29,6 +29,20 @@
     margin: 20px;
 }
 
+.left-col {
+    display:inline-block;
+    width:25%;
+    min-height:400px;
+    float:left;
+}
+
+.right-col {
+    display:inline-block;
+    width:70%;
+    min-height:400px;
+    float:right;
+}
+
 #adjusting-flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -78,10 +92,13 @@ nav ol li{
     margin:0.5em;
 }
 
+aside{
+    margin-top: 10em;
+    margin-bottom: 4em;
+}
 main{
     margin-top: 10em;
     margin-bottom: 4em;
-    width:100%;
 }
 
 footer{

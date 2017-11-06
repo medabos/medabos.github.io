@@ -74,10 +74,12 @@ header{
     outline: 0;
     text-align: center;
     background-color:blue;
+    display:inline-flex;
+    align-items: center;
 }
 
 header h1{
-
+    font-size:1.25em;
 }
 
 nav{

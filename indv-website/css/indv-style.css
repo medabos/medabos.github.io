@@ -75,7 +75,6 @@ header{
     text-align: center;
     background-color:blue;
     display:inline-flex;
-    align-items: center;
 }
 
 header h1{
@@ -87,6 +86,8 @@ nav{
     color:bisque;
     font-weight:bold;
     width:inherit;
+    min-height: 100px;
+    align-items: center;
 }
 
 nav ol li{
@@ -101,6 +102,14 @@ aside{
 main{
     margin-top: 10em;
     margin-bottom: 4em;
+}
+
+main h2{
+    color:white;
+    text-shadow: 2px 2px 5px #111111;
+    box-shadow: 5px 5px 3px #888888;
+    background:url(../img/elvator-background-2.jpg);
+    background-position:center;
 }
 
 footer{

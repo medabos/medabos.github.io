@@ -220,3 +220,43 @@ aside{background-color:blue;}
 footer{background-color:#0CF;}
 body {background-color:#DDF; border: 1px solid blue;}
 */
+
+@media screen and (max-width: 600px) {
+    div#left-col {
+        background-color: blue;
+    }
+
+    main {
+        background-color: yellow;
+    }
+
+    aside {
+        background-color: red;
+    }
+
+    nav {
+        background-color: purple;
+    }
+}
+
+@media print {
+    nav ol li {
+        font-size:.05em;
+        font-weight:bold;
+    }
+    div#left-col {
+        height:20em;
+    }
+
+    main {
+        height:20em;
+    }
+
+    aside {
+        height:20em;
+    }
+
+    footer {
+        height:20em;
+    }
+}

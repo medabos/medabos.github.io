@@ -81,6 +81,10 @@ header h1{
     font-size:1.25em;
 }
 
+header ol li {
+    font-size: 1.25em;
+}
+
 nav{
     background-color:bisque;
     color:bisque;
@@ -125,4 +129,25 @@ footer{
     border: 0;
     margin: 0;
     outline: 0;
+}
+
+button {
+    color:white;
+    background-color:blue;
+    text-shadow: 0px 0px 5px #111111;
+    font-size: 1.5em;
+    border: 0;
+}
+
+#adjusting-flex-group1 input {
+    background-color:bisque;
+    font-size: 1.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    width:50px;
+    text-align: center;
+}
+
+#adjusting-flex-group1 span {
+    font-size: 1.5em;
 }

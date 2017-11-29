@@ -151,3 +151,20 @@ button {
 #adjusting-flex-group1 span {
     font-size: 1.5em;
 }
+
+#image-container {
+    width: 350px;
+    height: 240px;
+    background: url(../img/blank-img-240x360.PNG);
+}
+
+#image-container img {
+    position: relative;
+    left: 50px;
+    top: 25px;
+    /*
+    left: 148px;
+    top: 88px;
+    */
+}
+

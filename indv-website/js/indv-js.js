@@ -9,108 +9,135 @@ function loadData() {
                 "instructions": "<ul><li>Oil Temperature needs to be at least 100 degrees F before setting adjustments</li><li>Both New and Rebuilt valves should have the adjustments pre-set. You can skip the steps under Pre-Setting, if this is the case. If you are unsure or think that some of the adjustments are way off then you can follow these steps to Pre-Set the Valve.</li></ul><p>Low Pressure Adjustment (Bypass) <br> Adjuster should be barely touching the top of the Bypass Piston. <br><br> Up Leveling <br> OUT until it stops <br> IN 4 turns <br><br> Up Start <br> IN until it Stops <br> OUT 9 Turns <br><br> Up Stop <br> IN until it Stops <br> OUT 3 turns <br><br> Up Slowdown <br> IN until it Stops <br> Leave Closed <br><br> Down - lowering and leveling <br> Turn IN until ¾” of threads are showing <br> Leave at 45 degree angle <br><br> Down Start <br> IN until it Stops <br> OUT 9 Turns <br><br> Down Stop <br> IN until it Stops <br> OUT 3 Turns <br><br> Down Slowdown <br> IN until it Stops <br> Leave Closed </p>",
                 "direction": "NONE",
                 "controller": "OFF",
-                "imgpath": "",
+                "imgpath": "../img/dover-i2-i3-adjuster-background.jpg",
                 "troubleshooting": "",
                 "turnin": "",
                 "turnout": "",
                 "info1": "",
-                "info2": ""
+                "info2": "",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "0",
+                "imgoverlayleft": "0"
             },
             "step2": {
                 "name": "<h3>BP - Low Pressure Adjustment (Bypass)</h3>",
                 "instructions": "<ol><li>Adjuster Direction – Turn IN until car starts to move up</li><li>Adjuster Direction – Turn OUT until car stops</li><li>Turn CCW an additional ½ Turn</li><li>Tighten Adjuster Locknut</li><li>Pump Motor - Off</li></ol>",
                 "direction": "UP",
                 "controller": "UP SLOW Solenoid - Disconnected, UP FAST Solenoid - Disconnected, PUMP - On",
-                "imgpath": "",
+                "imgpath": "../img/dover-i2-i3-adjuster-background-left.jpg",
                 "troubleshooting": "",
                 "turnin": "Car Moves UP",
                 "turnout": "Car Stops",
                 "info1": "",
-                "info2": ""
+                "info2": "",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "15",
+                "imgoverlayleft": "161"
             },
             "step3": {
                 "name": "<h3>RV - Relief Valve</h3>",
                 "instructions": "<ol><li>Close line shut-off valve and install pressure gauge<br>Note: Stop pump IMMEDIATELY if pressure exceeds 625 psi</li><li>Turn IN until pressure is as stated on the Power Unit Data Plate</li><li>PUMP - Off</li><li>Open Manual Lowering to relieve pressure and close again</li><li>Repeat steps 2 thru 4</li></ol>",
                 "direction": "NONE",
                 "controller": "Inspection Operation - UP",
-                "imgpath": "",
+                "imgpath": "../img/dover-i2-i3-adjuster-background.jpg",
                 "troubleshooting": "",
                 "turnin": "Higher Pressure relief",
                 "turnout": "Lower Pressure relief",
                 "info1": "",
-                "info2": ""
+                "info2": "",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "191",
+                "imgoverlayleft": "7"
             },
             "step4": {
                 "name": "UP Slowdown",
                 "instructions": "Adjust until car moves 10 to 12 fpm",
                 "direction": "UP",
                 "controller": "Inspection Operation - UP",
-                "imgpath": "",
+                "imgpath": "../img/dover-i2-i3-adjuster-background.jpg",
                 "troubleshooting": "",
                 "turnin": "Softer, Increases UP Leveling Speed",
                 "turnout": "Firmer, Decreases UP Leveling Speed",
                 "info1": "",
-                "info2": ""
+                "info2": "",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "71",
+                "imgoverlayleft": "98"
             },
             "step5": {
                 "name": "UL - UP Leveling",
                 "instructions": "Adjust until car moves 13 to 15 FPM",
                 "direction": "UP",
                 "controller": "Inspection Operation - UP",
-                "imgpath": "",
+                "imgpath": "../img/dover-i2-i3-adjuster-background-left.jpg",
                 "troubleshooting": "",
                 "turnin": "Increases UP Leveling Speed",
                 "turnout": "Decreased UP Leveling Speed",
                 "info1": "",
-                "info2": ""
+                "info2": "",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "167",
+                "imgoverlayleft": "163"
             },
             "step6": {
                 "name": "DOWN Stop",
                 "instructions": "Adjust until car moves 15-20 FPM",
                 "direction": "DOWN",
                 "controller": "Inspection Operation - DOWN",
-                "imgpath": "",
+                "imgpath": "../img/dover-i2-i3-adjuster-background.jpg",
                 "troubleshooting": "",
                 "turnin": "Softer Down Stop, Firmer Down Start, Smoother Down Slowdown, Faster Down Leveling Speed",
                 "turnout": "Firmer Down Stop, Softer Down Start, Faster Down Slowdown, Smoother Down Leveling Speed",
                 "info1": "",
-                "info2": ""
+                "info2": "",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "85",
+                "imgoverlayleft": "215"
             },
             "step7": {
                 "name": "DOWN Leveling",
                 "instructions": "<ol><li>Adjust until car moves 10-12 FPM</li><li>NOTE: Down Leveling speed is very sensitive and the adjustment zone is within ¼ turn</li></ol>",
                 "direction": "DOWN",
                 "controller": "Inspection Operation - DOWN",
-                "imgpath": "",
+                "imgpath": "../img/dover-i2-i3-adjuster-background-right.jpg",
                 "troubleshooting": "",
                 "turnin": "Decrease Leveling Speed",
                 "turnout": "Increase Leveling Speed",
                 "info1": "",
-                "info2": ""
+                "info2": "",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "75",
+                "imgoverlayleft": "149"
             },
             "step8": {
                 "name": "DOWN Stop - Recheck",
                 "instructions": "Adjust for about a 1 sec transition to stop",
                 "direction": "DOWN",
                 "controller": "Inspection Operation - DOWN",
-                "imgpath": "",
+                "imgpath": "../img/dover-i2-i3-adjuster-background.jpg",
                 "troubleshooting": "",
                 "turnin": "Softer Down Stop, Firmer Down Start, Smoother Down Slowdown, Faster Down Leveling Speed",
                 "turnout": "Firmer Down Stop, Softer Down Start, Faster Down Slowdown, Smoother Down Leveling Speed",
                 "info1": "",
-                "info2": ""
+                "info2": "",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "85",
+                "imgoverlayleft": "215"
             },
             "step9": {
                 "name": "DOWN Leveling - Recheck",
                 "instructions": "<ol><li>Adjust until car moves 10-12 FPM</li><li>NOTE: Down Leveling speed is very sensitive and the adjustment zone is within ¼ turn</li></ol>",
                 "direction": "DOWN",
                 "controller": "Inspection Operation - DOWN",
-                "imgpath": "",
+                "imgpath": "../img/dover-i2-i3-adjuster-background-right.jpg",
                 "troubleshooting": "",
                 "turnin": "Decrease Leveling Speed",
                 "turnout": "Increase Leveling Speed",
                 "info1": "",
-                "info2": ""
+                "info2": "",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "75",
+                "imgoverlayleft": "149"
             },
             "step10": {
                 "name": "UP Slowdown",
@@ -122,7 +149,10 @@ function loadData() {
                 "turnin": "xxxxx",
                 "turnout": "xxxxx",
                 "info1": "xxxxx",
-                "info2": "xxxxx"
+                "info2": "xxxxx",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "88",
+                "imgoverlayleft": "148"
             },
             "step11": {
                 "name": "UP Stop",
@@ -134,7 +164,10 @@ function loadData() {
                 "turnin": "xxxxx",
                 "turnout": "xxxxx",
                 "info1": "xxxxx",
-                "info2": "xxxxx"
+                "info2": "xxxxx",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "88",
+                "imgoverlayleft": "148"
             },
             "step12": {
                 "name": "UP Start",
@@ -146,7 +179,10 @@ function loadData() {
                 "turnin": "xxxxx",
                 "turnout": "xxxxx",
                 "info1": "xxxxx",
-                "info2": "xxxxx"
+                "info2": "xxxxx",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "88",
+                "imgoverlayleft": "148"
             },
             "step13": {
                 "name": "UP Slowdown - Fine Tuning",
@@ -158,7 +194,10 @@ function loadData() {
                 "turnin": "xxxxx",
                 "turnout": "xxxxx",
                 "info1": "xxxxx",
-                "info2": "xxxxx"
+                "info2": "xxxxx",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "88",
+                "imgoverlayleft": "148"
             },
             "step14": {
                 "name": "DOWN Main Speed",
@@ -170,7 +209,10 @@ function loadData() {
                 "turnin": "xxxxx",
                 "turnout": "xxxxx",
                 "info1": "xxxxx",
-                "info2": "xxxxx"
+                "info2": "xxxxx",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "88",
+                "imgoverlayleft": "148"
             },
             "step15": {
                 "name": "DOWN Leveling",
@@ -182,7 +224,10 @@ function loadData() {
                 "turnin": "xxxxx",
                 "turnout": "xxxxx",
                 "info1": "xxxxx",
-                "info2": "xxxxx"
+                "info2": "xxxxx",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "88",
+                "imgoverlayleft": "148"
             },
             "step16": {
                 "name": "DOWN Stop",
@@ -194,7 +239,10 @@ function loadData() {
                 "turnin": "xxxxx",
                 "turnout": "xxxxx",
                 "info1": "xxxxx",
-                "info2": "xxxxx"
+                "info2": "xxxxx",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "88",
+                "imgoverlayleft": "148"
             },
             "step17": {
                 "name": "DOWN Start",
@@ -206,7 +254,10 @@ function loadData() {
                 "turnin": "xxxxx",
                 "turnout": "xxxxx",
                 "info1": "xxxxx",
-                "info2": "xxxxx"
+                "info2": "xxxxx",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "88",
+                "imgoverlayleft": "148"
             },
             "step18": {
                 "name": "DOWN Slowdown",
@@ -218,7 +269,10 @@ function loadData() {
                 "turnin": "xxxxx",
                 "turnout": "xxxxx",
                 "info1": "xxxxx",
-                "info2": "xxxxx"
+                "info2": "xxxxx",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "88",
+                "imgoverlayleft": "148"
             },
             "step19": {
                 "name": "",
@@ -230,7 +284,10 @@ function loadData() {
                 "turnin": "xxxxx",
                 "turnout": "xxxxx",
                 "info1": "xxxxx",
-                "info2": "xxxxx"
+                "info2": "xxxxx",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "88",
+                "imgoverlayleft": "148"
             },
             "step20": {
                 "name": "",
@@ -242,7 +299,10 @@ function loadData() {
                 "turnin": "xxxxx",
                 "turnout": "xxxxx",
                 "info1": "xxxxx",
-                "info2": "xxxxx"
+                "info2": "xxxxx",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "88",
+                "imgoverlayleft": "148"
             },
             "step21": {
                 "name": "",
@@ -254,7 +314,10 @@ function loadData() {
                 "turnin": "xxxxx",
                 "turnout": "xxxxx",
                 "info1": "xxxxx",
-                "info2": "xxxxx"
+                "info2": "xxxxx",
+                "imgoverlaypath": "../img/adjust-overlay.png",
+                "imgoverlaytop": "88",
+                "imgoverlayleft": "148"
             }
         }
     };
@@ -276,12 +339,47 @@ function getAdjustingStep(adjustingset, step) {
     document.getElementById("a-instructions").innerHTML = subobj["step" + step].instructions;
     document.getElementById("a-direction").innerHTML = subobj["step" + step].direction;
     document.getElementById("a-controller").innerHTML = subobj["step" + step].controller;
-    document.getElementById("a-img").innerHTML = subobj["step" + step].imgpath;
     document.getElementById("a-troubleshooting").innerHTML = subobj["step" + step].troubleshooting;
     document.getElementById("a-turnin").innerHTML = subobj["step" + step].turnin;
     document.getElementById("a-turnout").innerHTML = subobj["step" + step].turnout;
     document.getElementById("a-info1").innerHTML = subobj["step" + step].info1;
     document.getElementById("a-info2").innerHTML = subobj["step" + step].info2;
+}
+
+function getAdjustingStepData(adjustingset, step) {
+
+    "use strict";
+    var text, JSONobj, subobj;
+
+    //Retrieve data:
+    text = localStorage.getItem("adjustingGuideData");
+    JSONobj = JSON.parse(text);
+    subobj = JSONobj[adjustingset];
+
+    document.getElementById("step").value = step;
+    document.getElementById("a-name").innerHTML = subobj["step" + step].name;
+    document.getElementById("a-instructions").innerHTML = subobj["step" + step].instructions;
+    document.getElementById("a-direction").innerHTML = subobj["step" + step].direction;
+    document.getElementById("a-controller").innerHTML = subobj["step" + step].controller;
+    document.getElementById("a-troubleshooting").innerHTML = subobj["step" + step].troubleshooting;
+    document.getElementById("a-turnin").innerHTML = subobj["step" + step].turnin;
+    document.getElementById("a-turnout").innerHTML = subobj["step" + step].turnout;
+    document.getElementById("a-info1").innerHTML = subobj["step" + step].info1;
+    document.getElementById("a-info2").innerHTML = subobj["step" + step].info2;
+
+    // This includes jquery example for changing img css
+    $("#image-container").css("background", "url(" + subobj["step" + step].imgpath + ")");
+
+    if (subobj["step" + step].imgoverlaytop === "0" && subobj["step" + step].imgoverlayleft === "0") {
+        $("#image-container img").hide();
+    } else {
+        $("#image-container img").show();
+        $("#image-container img").attr("src", subobj["step" + step].imgoverlaypath);
+    }
+    $("#image-container img").attr("src", subobj["step" + step].imgoverlaypath);
+
+    $("#image-container img").css("top", subobj["step" + step].imgoverlaytop + "px");
+    $("#image-container img").css("left", subobj["step" + step].imgoverlayleft + "px");
 }
 
 function nextStep() {
@@ -292,7 +390,7 @@ function nextStep() {
     currentStepNumber += 1;
     laststep = parseInt(document.getElementById("laststep").value, 10);
     if (currentStepNumber <= laststep) {
-        getAdjustingStep(document.getElementById("adjustingset").value, currentStepNumber);
+        getAdjustingStepData(document.getElementById("adjustingset").value, currentStepNumber);
     }
 }
 
@@ -302,18 +400,18 @@ function prevStep() {
     currentStepNumber = parseInt(document.getElementById("step").value, 10);
     currentStepNumber -= 1;
     if (currentStepNumber > 0) {
-        getAdjustingStep(document.getElementById("adjustingset").value, currentStepNumber);
+        getAdjustingStepData(document.getElementById("adjustingset").value, currentStepNumber);
     }
 }
 
 function buttonHover(obj) {
     "use strict";
-    obj.style.backgroundColor="green";
+    obj.style.backgroundColor = "green";
 }
 
 function buttonOut(obj) {
     "use strict";
-    obj.style.backgroundColor="blue";
+    obj.style.backgroundColor = "blue";
 }
 
 loadData();

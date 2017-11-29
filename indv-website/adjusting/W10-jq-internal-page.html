@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adjusting Guide - ethingtonsolutions.com</title>
+    <link href="../css/indv-style.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="../js/indv-js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href=../../index.html><img src="../img/ethingtonsolutions-logo-transparent.png" alt="ethingtonsolutions.com logo"></a><h1>Elevator Valve Guide</h1>
+        <nav>
+            <ol>
+                <li><a href="../identifying.html">Identifing</a></li>
+                <li><a href="../adjusting.html">Adjusting</a></li>
+                <li><a href="../troubleshooting.html">Troubleshooting</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../../cit230-links.html">CIT230 Links</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <h2>Dover I-2 / I-3 Adjusting Guide</h2>
+        <div id="adjusting-flex-container">
+            <div id="adjusting-flex-group1">
+                <button onclick="prevStep()">Prev</button>
+
+                <input id="step" name="fstep" type="text" value="1" disabled>
+
+                <span> of </span>
+
+                <input id="laststep" name="fstep" type="text" value="9" disabled>
+
+                <button onclick="nextStep()">Next</button>
+                <span> jQuery Example: Changes Image Position for Every Step</span>
+                <!--
+                    This is where you load the adjusting instruction set
+                -->
+                <input type="text" id="adjustingset" value="doveri2i3" hidden>
+            </div>
+            <div id="adjusting-flex-group2">
+                <h4>Name: </h4>
+                <div id="a-name">Name</div>
+
+                <h4>Car Direction: </h4>
+                <div id="a-direction">Direction</div>
+
+                <h4>Controller / Selonoids: </h4>
+                <div id="a-controller">Controller Info</div>
+
+                <h4>Adjuster IN: </h4>
+                <div id="a-turnin">Turn In</div>
+
+                <h4>Adjuster OUT: </h4>
+                <div id="a-turnout">Turn Out</div>
+
+                <h4>Info 1: </h4>
+                <div id="a-info1">Info 1</div>
+
+                <h4>Info 2: </h4>
+                <div id="a-info2">Info 2</div>
+            </div>
+            <div id="adjusting-flex-group3">
+                <div id=image-container>
+                    <img alt="Adjuster Overlay Pic" src="../img/adjust-overlay.png">
+                </div>
+                <h4>Instructions: </h4>
+                <div id="a-instructions">Instructions</div>
+
+                <h4>Troubleshooting: </h4>
+                <div id="a-troubleshooting">Troubleshooting</div>
+
+            </div>
+        </div>
+    </main>
+
+    <Footer>
+        <p class="centered">&copy; 2017 ethingtonsolutions.com</p>
+    </Footer>
+
+    <script>
+        var adjset;
+        adjset = document.getElementById("adjustingset").value;
+        getAdjustingStepData(adjset, 1);
+    </script>
+</body>
+
+</html>

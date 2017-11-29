@@ -3,12 +3,13 @@
 
 <head>
     <title>Load JSON File Locally by Javascript Without JQuery</title>
+    <meta charset="UTF-8">
 </head>
 
 <body onload="load()">
-    <div style="width:640px; height:480px;"></div>
+    <div id="map" style="width:640px; height:480px;"></div>
 
-    <script type="text/javascript" ></script>
+    <script src="../ponder-prove/week12-data.json" type="text/javascript"></script>
 
     <script>
         function load() {
@@ -18,22 +19,21 @@
                 center: new google.maps.LatLng(25.2048, 55.2708),
                 zoom: 11
             }
-            const map = ;
+            const map = new google.maps.Map(document.getElementById("map"),mapOptions);
 
-            var mydata = ;
+            var mydata = JSON.parse(data);
 
-             {
+             for (x = 0; x < 3; x++) {
                 let marker = new google.maps.Marker({
                     map: map,
-                    position: new google.maps.LatLng(, ,
-                    title: 
+                    position: new google.maps.LatLng(mydata[x].location[0], mydata[x].location[1]),
+                    title: mydata[x].name
                 })
             }
         }
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=<put in your key>&sensor=true"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFQ9I2zbgUnDxE1lPZRVQuykQTEefh3fs&sensor=true"></script>
 </body>
 
 </html>

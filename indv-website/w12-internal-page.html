@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us - ethingtonsolutions.com</title>
+    <link href="css/indv-style.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+    <header>
+        <a href=../index.html><img src="img/ethingtonsolutions-logo-transparent.png" alt="ethingtonsolutions.com logo"></a>
+        <h1>Elevator Valve Guide</h1>
+        <nav>
+            <ol>
+                <li><a href="identifying.html">Identifing</a></li>
+                <li><a href="adjusting.html">Adjusting</a></li>
+                <li><a href="troubleshooting.html">Troubleshooting</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="../cit230-links.html">CIT230 Links</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <h2>About Me</h2>
+        <p>My name is Sam and I am a student studying Computer Information Technology and an experienced Elevator Hydraulic Control Valve Mechanic. I understand that it is nice to have the right information on these valves, so I decided to put together some guides on Identifying, Adjusting, and Troubleshooting. Whether you’re a seasoned Elevator Technician that needs a refresher on adjusting or relatively new to the trade, these guides can help to save you time and frustration.</p>
+
+        <h2>Contact Me</h2>
+        <p>I am dedicated to make these guide as accurate an easy to follow as possible, so that you can that hydraulic elevator up and running as soon as possible. Feel free to contact me with any questions or suggestions at <a href="mailto:sam@ethingtonsolutions.com">sam@ethingtonsolutions.com</a>.</p>
+
+        <br>
+
+        <div id="map" style="width:300px;height:300px"></div>
+
+        <script>
+            function myMap() {
+                var myCenter = new google.maps.LatLng(43.812395, -111.807256);
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {
+                    center: new google.maps.LatLng(43.812395, -111.807256),
+                    zoom: 8,
+                    panControl: true,
+                    zoomControl: true,
+                    mapTypeControl: true,
+                    scaleControl: true,
+                    streetViewControl: true,
+                    overviewMapControl: true,
+                    rotateControl: true
+                };
+
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+
+                var marker = new google.maps.Marker({
+                    position: myCenter
+                });
+                marker.setMap(map);
+
+
+                // Zoom to 12 when clicking on marker
+                google.maps.event.addListener(marker, 'click', function () {
+                    var pos = map.getZoom();
+                    map.setZoom(12);
+                    map.setCenter(marker.getPosition());
+                    window.setTimeout(function () {
+                        map.setZoom(pos);
+                    }, 5000);
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFQ9I2zbgUnDxE1lPZRVQuykQTEefh3fs&callback=myMap"></script>
+        <br>
+
+        <p><b>Elevator Music: </b><a href="http://www.reallygoodelevatormusic.com" target="_blank">www.reallygoodelevatormusic.com</a></p>
+
+        <p>Really Bad December Music by Alex Lewis</p>
+        <audio src="audio/Really-Bad-December-Music.mp3" controls>
+            <p><b>Really Bad December Music</b> by Alex Lewis</p>
+        </audio>
+
+        <p>Sunday Breakfast by Kyle Pulley & Yowei Shaw</p>
+        <audio src="audio/Sunday-Breakfast-Mix-4.mp3" controls>
+            <p><b>Sunday Breakfast</b> by Kyle Pulley & Yowei Shaw</p>
+        </audio>
+    </main>
+    <footer>
+        <p class="centered">&copy; 2017 ethingtonsolutions.com</p>
+    </footer>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+
+
+</body>
+
+</html>

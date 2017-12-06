@@ -20,6 +20,9 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     outline: 0;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .centered {
     text-align: center;
@@ -36,40 +39,6 @@ body {
     margin: 20px;
 }
 
-.left-col {
-    display:inline-block;
-    width:25%;
-    min-height:400px;
-    float:left;
-}
-
-.right-col {
-    display:inline-block;
-    width:70%;
-    min-height:400px;
-    float:right;
-}
-
-#adjusting-flex-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#adjusting-flex-group1 {
-    align-self: flex-start;
-    width: 100%;
-}
-
-#adjusting-flex-group2 {
-    flex-direction:column;
-    width: 33%;
-}
-
-#adjusting-flex-group3 {
-    display: flex;
-    flex-direction: column;
-    width: 66%;
-}
 header{
     width: 100%;
     padding: 0;
@@ -78,13 +47,19 @@ header{
     outline: 0;
     text-align: center;
     background-color:blue;
-    display:inline-flex;
+    height: 10%;
+}
+
+header a {
+    float: left;
 }
 
 header h1{
     font-size:1.5em;
     text-shadow: 0px 0px 3px #ffffff;
     font-weight: 800;
+    padding-top: 30px;
+    height: 52px;
 }
 
 header ol li {
@@ -100,9 +75,11 @@ nav{
     align-items: center;
 }
 
+nav ol{
+    padding-left: 0;
+}
+
 nav ol li{
-    display:inline-block;
-    margin:0.5em;
     background-color:white;
     padding: 0.25em;
     border-style: solid;
@@ -129,6 +106,7 @@ main h2{
     box-shadow: 5px 5px 3px #888888;
     background:url(../img/elvator-background-2.jpg);
     background-position:center;
+    max-width: 1400px;
 }
 
 main h3 {
@@ -143,6 +121,7 @@ footer{
     text-align: center;
     background-color:black;
     color:white;
+    height: 10%;
 }
 
 button {
@@ -153,17 +132,20 @@ button {
     border: 0;
 }
 
-#adjusting-flex-group1 input {
-    background-color:bisque;
-    font-size: 1.5em;
-    padding-left: 10px;
-    padding-right: 10px;
-    width:50px;
-    text-align: center;
+#adjusting-flex-container {
+
 }
 
-#adjusting-flex-group1 span {
-    font-size: 1.5em;
+#adjusting-flex-group1 {
+
+}
+
+#adjusting-flex-group2 {
+
+}
+
+#adjusting-flex-group3 {
+
 }
 
 #image-container {
@@ -182,3 +164,67 @@ button {
     */
 }
 
+#adjusting-flex-group1 input {
+    background-color:bisque;
+    font-size: 1.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    width:50px;
+    text-align: center;
+}
+
+#adjusting-flex-group1 span {
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        display: inline-flex;
+    }
+
+    header h1 {
+        font-size: 2em;
+        padding-top: 0;
+        margin-top: 0;
+        min-width: 8.5em;
+    }
+
+    nav ol li{
+        display: inline-flex;
+    }
+
+    .left-col {
+        display:inline-block;
+        width:25%;
+        min-height:400px;
+        float:left;
+    }
+
+    .right-col {
+        display:inline-block;
+        width:70%;
+        min-height:400px;
+        float:right;
+    }
+
+    #adjusting-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #adjusting-flex-group1 {
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    #adjusting-flex-group2 {
+        flex-direction:column;
+        width: 33%;
+    }
+
+    #adjusting-flex-group3 {
+        display: flex;
+        flex-direction: column;
+        width: 66%;
+    }
+}

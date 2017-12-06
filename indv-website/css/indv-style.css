@@ -76,7 +76,7 @@ nav{
 }
 
 nav ol{
-    padding-left: 0;
+    padding: 1px 20px 1px 20px;
 }
 
 nav ol li{
@@ -94,9 +94,11 @@ nav ol li a {
 
 aside{
     font-size: 1.20em;
+    padding: 1px 10px 1px 10px;
 }
 main{
     font-size: 1.15em;
+    padding: 1px 10px 1px 10px;
 }
 
 main h2{
